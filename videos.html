@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+    <link rel="stylesheet" href="assets/css/video.css">
+</head>
+<body>
+    <div class="head">
+        <h2>MY  VIDEO  GALLERY</h2>
+        <button>
+            <a href="Gallery.html">GO BACK</a>
+        </button>
+    </div>
+    <div class="video-c">
+        <div class="video-b">
+            <div class="vid" id="vid">
+               <img src="assets/shp/dac.jpg" width="80%">
+               <img src="assets/img/playbutton.png" class="play"
+               onclick="playvideo('assets/video/waah.mp4')">
+            </div>
+        </div>
+        <div class="video-b">
+            <div class="colom">
+                <div class="box">
+                    <video controls class="video">
+                        <source src="assets/video/mundawo.mp4" type="video/mp4">
+                    </video>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit.
+                    </p>  
+                </div>
+                <div class="box">
+                    <video controls class="video">
+                        <source src="assets/video/peru.mp4" type="video/mp4">
+                    </video>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit.
+                    </p> 
+                </div>
+                <div class="box">
+                    <video controls class="video">
+                        <source src="assets/video/monalisa.mp4" type="video/mp4">
+                    </video> 
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit.
+                    </p> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="playnow" id="playnow">
+        <video controls autoplay id="myvideo">
+            <source src="assets/video/waah.mp4" type="mp4">
+        </video>
+        <img src="assets/img/closebutton.png" class="closebtn" onclick="stopvideo()">
+    </div>
+</body>
+
+<script src="assets/java/java.js"></script>
+</html>
